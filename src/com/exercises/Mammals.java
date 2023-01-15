@@ -34,7 +34,7 @@ public abstract class Mammals {
         mammals.add(bugs);
 
         String nameToFind;
-        String mammalName;
+
         while (true) {
             System.out.print("Enter a name: ");
             nameToFind = inputStream.next();
