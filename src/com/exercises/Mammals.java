@@ -15,7 +15,7 @@ public abstract class Mammals {
         Human mark = new Human("Mark", "Irish","Star Trek");
         mammals.add(mark);
 
-        Human michaela = new Human("Michaela", "Austrian", "????");
+        Human michaela = new Human("Michaela", "Austrian", "The Sound of Music");
         mammals.add(michaela);
 
         Dog rover = new Dog("Rover", "Steak bone", "German Shepherd");
@@ -42,6 +42,12 @@ public abstract class Mammals {
             if (nameToFind.equals("end")) {
                 break;
             }
+            boolean changeName = false;
+            if (nameToFind.endsWith("*U")) {
+               // nameToFind = nameToFind.substring(0,nameToFind.lastIndexOf("*"));
+                nameToFind = nameToFind.replace("*U", "");
+                changeName = true;
+            }
 
             // Search the ArrayList for name
             boolean nameNotFound = true;
@@ -49,7 +55,14 @@ public abstract class Mammals {
 
                 String name = mammal.getName();
                 if (name.equals(nameToFind)) {
-                    System.out.println(mammal.sayHello());
+                    if (changeName) {
+                        System.out.print("Enter a new name for " + name + ": ");
+                        String newName = inputStream.next();
+                        mammal.setName(newName);
+                        System.out.println("name changed");
+                    } else {
+                        System.out.println(mammal.sayHello());
+                    }
                     nameNotFound = false;
                 }
 

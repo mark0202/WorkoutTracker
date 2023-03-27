@@ -18,6 +18,10 @@ public abstract class Mammal {
         return name;
     }
 
+    public void setName(String newName) {
+        name = newName;
+    }
+
     public String sayHello() {
         return "Hello! I'm " + name + ". No details have been provided";
     }
