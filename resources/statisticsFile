@@ -1,0 +1,26 @@
+- - - Person 1 - - -
+Name: Sue Smith (23)
+Number of biking Exercises: 3
+Number of swimming Exercises: 3
+Average duration: 98min
+- - - Person 2 - - -
+Name: Tom Thumb (27)
+Number of biking Exercises: 3
+Number of swimming Exercises: 5
+Average duration: 83min
+- - - Person 3 - - -
+Name: Jim Jones (44)
+Number of biking Exercises: 3
+Number of swimming Exercises: 4
+Average duration: 81min
+
+- - - Biking - - -
+Average distance: 47500m
+Average duration: 157min
+# mountain: 4
+# road: 5
+- - - Swimming - - -
+Average distance: 1010m
+Average duration: 35min
+# backstroke: 5
+# butterfly: 7
